@@ -1,6 +1,6 @@
 # Proyecto Family Pets
 Evaluación 3 programación web.
-Succión: PGY3121-002.
+Sección: PGY3121-002D.
 Profesor: Cristian Gómez.
 Grupo: Zucaritas FC.
 Integrantes: Javiera leyton, Bastian Sepúlveda, Diego Vargas, Marcelo Saavedra.
