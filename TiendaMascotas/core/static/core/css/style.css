@@ -1,0 +1,276 @@
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+}
+
+th {
+	background-color: #f2f2f2;
+}
+
+		
+button {
+	background-color: transparent;
+	color: white;
+	border: none;
+	padding: 8px 16px;
+	text-align: center;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: transparent;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-registrar{
+    text-align: center;
+}
+
+.sale-real-price{
+    text-decoration: line-through;
+}
+.sale-offer-price{
+    color: green;
+}
+
+footer {
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    color: #fff;
+  }
+
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-container a {
+    margin: 0 20px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .footer-container a:hover {
+    color: #bbb;
+  }
+
+  /*inicio sesion*/
+
+  .h1{
+    text-align: center;
+}
+
+.mover-r{
+    display: flex;
+    justify-content: center;
+} 
+
+.form-control{
+    width: 300px !important;
+}
+
+.mover-2{
+    display: flex;
+    justify-content: center;
+}
+
+
+.Olvidaste{
+    text-align: center;
+}
+
+.registrar{
+  text-align: center;
+}
+
+.datos{
+  text-align: center;
+}
+
+.dato-1{
+  text-align: center;
+}
+
+
+.productos-destacados{
+  text-align: center;
+}
+
+/* nuevo ficha producto*/
+
+
+.ficha-producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+.producto-imagen {
+  width: 50%;
+  padding-right: 50px;
+  margin-left: 150px;
+}
+
+.producto-info {
+  width: 50%;
+}
+
+.producto-info h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.producto-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.producto-info button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.producto-info button:hover {
+  background-color: #3e8e41;
+}
+
+
+.ficha-titulo{
+  margin-left: 60px;
+}
+
+.ficha-producto{
+  border: 1px solid black;
+}
+
+/* nuevo detalle boleta*/
+
+.estado-venta {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.estado-venta li {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #eee;
+  color: #333;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.estado-venta li.vendido {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.estado-venta li.despachado {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.estado-venta li.entregado {
+  background-color: #ffc107;
+  color: #fff;
+}
+/* Mostrar contraseña */
+
+.input-group {
+  position: relative;
+}
+
+.input-group .toggle-password {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 10px);
+  cursor: pointer;
+}
+
+
+
+
+/* ------------------------------------------------------------ */
+/* footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+p {
+  font-size: 14px;
+}
+
+p i {
+  font-style: normal;
+}
+
+p i.fa {
+  width: 20px;
+}
+
+p i.fa:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+}
+
+p i.fa-envelope:before {
+  content: "\f0e0";
+}
+
+p i.fa-phone:before {
+  content: "\f095";
+}
+
+p i.fa-map-marker:before {
+  content: "\f041";
+}
+
+footer .copyright {
+  font-size: 12px;
+  color: #888;
+}

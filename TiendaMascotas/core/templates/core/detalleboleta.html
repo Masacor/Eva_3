@@ -1,0 +1,63 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% load custom_filters %}
+
+{% block content %}
+      <h1>Detalle boleta N° {{ boleta.nro_boleta }}</h1>
+      <br>
+      <ol class="estado-venta">
+        <li class="vendido">Vendido <br> {{ boleta.fecha_venta|formatear_fecha }}</li>
+        <li class="despachado">Despachado <br> {{ boleta.fecha_despacho|formatear_fecha }}</li>
+        <li class="entregado">Entregado <br>{{ boleta.fecha_entrega|formatear_fecha }}</li>
+      </ol>
+      <br>
+      <table>
+        <tr>
+          <th>Categoria</th>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>%Subscriptor</th>
+          <th>%Oferta</th>
+          <th>%Desc total</th>
+          <th>Descuentos</th>
+          <th>Precio a pagar</th>
+        </tr>
+        <tr>
+          {% for item in detalle_boleta %}
+                <tr>
+                    <td> {{ item.bodega.producto.categoria.nombre }} </td>
+                    <td> {{ item.bodega.producto.nombre }} </td>
+                    <td> {{ item.precio|formatear_dinero }} </td>
+                    <td> {{ item.descuento_subscriptor|formatear_porcentaje }} </td>
+                    <td> {{ item.descuento_oferta|formatear_porcentaje }} </td>
+                    <td> {{ item.descuento_total|formatear_porcentaje }} </td>
+                    <td class="text-end"> {{ item.descuentos|formatear_dinero }} </td>
+                    <td class="text-end"> {{ item.precio_a_pagar|formatear_dinero }} </td>
+                </tr>
+            {% endfor %}
+        </tr>
+      </table>
+      <br>
+      <!-- css -->
+      <div style="position: relative; left: 50px;">
+        <div class="row">
+          <div class="col">
+            <div class="mb-3">
+              <label for="precio" class="form-label">Precio</label>
+              <input type="text" placeholder="{{ boleta.monto_sin_iva|formatear_dinero }}" class="form-control" id="precio" disabled>
+            </div>
+            <div class="mb-3">
+              <label for="valoriva" class="form-label">Valor del IVA(19%)</label>
+              <input type="text" placeholder="{{ boleta.iva|formatear_dinero }} " class="form-control" id="valoriva" disabled>
+            </div>
+            <div class="mb-3">
+              <label for="totalapagar" class="form-label">Total a pagar</label>
+              <input type="text" placeholder="{{ boleta.total_a_pagar|formatear_dinero }}" class="form-control" id="totalapagar" disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+{% endblock content %}
+    <script src="JS/XML.js"></script>
+</body>
+</html>
